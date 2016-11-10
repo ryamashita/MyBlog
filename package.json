@@ -1,9 +1,9 @@
 {
-  "name": "clean-blog",
-  "title": "Clean Blog",
+  "name": "storyofstartup",
+  "title": "プログラミング知識０からIT企業を起業する話",
   "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/clean-blog",
-  "author": "Start Bootstrap",
+  "homepage": "http://www.storyofstartup.com",
+  "author": "Lisfee",
   "license": {
     "type": "MIT",
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
