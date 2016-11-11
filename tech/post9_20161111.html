@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="アイディアの発想法、その間も形式発想法についてまとめました。形から入る、たとえば、アプリ開発であれば、ユーザインターフェースを先に考えることで新しいサービスを開発することが可能となります。">
+    <meta name="description" content="SEO対策の基本中の基本、Description要素などの記載方法についてまとめました。">
     <meta name="author" content="Lisfee">
 
     <title>プログラミング知識０からIT企業を起業する話</title>
@@ -71,14 +71,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('https://res.cloudinary.com/hogj88pk3/image/upload/v1478762104/sunrise-1765027_1920_buryvk.jpg')">
+    <header class="intro-header" style="background-image: url('https://res.cloudinary.com/hogj88pk3/image/upload/v1478846434/computer-767776_1920_vjpnu0.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h2>[起業] アイディアの捻出方法〜その①〜</h2>
-                        <h3 class="post-subtitle">形式から考える</h3><br>
-                        <span class="meta">Posted by <a href="https://www.facebook.com/ryuichi.yamashita">Ryuichi Yamashita</a> on Nov 10, 2016</span>
+                        <h2>[Tech/WEB] SEO対策　初級編テクニック〜その①〜</h2>
+                        <h3 class="post-subtitle">’title’要素と’description’要素について</h3><br>
+                        <span class="meta">Posted by <a href="https://www.facebook.com/ryuichi.yamashita">Ryuichi Yamashita</a> on Nov 11, 2016</span>
                     </div>
                 </div>
             </div>
@@ -90,29 +90,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>突然ですが、何かしら新しいアイディアを考える時、皆さんはどのような方法をとられていますか？私の場合幾つか方法があるのですが、中でもかなり効果的だと思っている方法を今回はご紹介したいと思います。</p>
+                    <p>最近、SEO対策について色々と学習しているのですが、情報が氾濫しすぎていて何から手をつければいいのかわからなくなってきました。。自分自身整理する意味も込めて、何回かに分けてまとめてみたいと思います。SEO対策って何？という読者の方のために簡単にまとめておくと、Googleなどで何かしら検索された時に、自分のサイトが検索結果の上位表示されるようにするための対策のことです。Googleは世界のWebサイト上をぐるぐる巡回、監視するプログラム（いわゆるクローラー）を走らせていて、そのプログラムに、「私のサイトは有益な情報が書いてあるよ！」と知らせることが本質的なSEO対策といえます。</p>
 
-                    <p>その名も、「形式発想法」です！</p>
+                    <p>ここで重要なことは、Googleが別にその基準（Googleのプログラムが特定のWebサイトを有益だと判断する基準）を公開しているわけではないので、一つの仮説としてお付き合いください。</p>
 
-                    <p>現在進行形で英単語の学習アプリを作っているのですが、このアイディアは形式から考えてみました。どういうことかというと、プログラミングの学習サイトでTinder（Facebook経由で登録できる流行りの出会い系アプリ）を作ろうというものがあり、真似をして作っていたんですね。（Tinderを知らない人のために少し補足しておくと、画面上で異性、もしくは同性の写真が出てきて、その写真をもとに「好き」か「嫌い」を選んでいき、もし相手方も自分も「好き」を選ぶとマッチングが成立、晴れてメッセージ交換が可能となるアプリです。）で、ある程度完成したのですが、今更Tinder二世をそのままリリースしても勝ち目なんてありません。そこでこのTinderアプリの形式（UI）で何が本質的要素なのかを考えてみました。</p>
-
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <img class="img-responsive" src="../img/tinder.png" alt="">
-                        <blockquote>Tinder（App Storeの画像から引用）</blockquote>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p>Tinderを少しでも触ったことがある人なら想像していただけると思うのですが、このアプリの本質は、<br>
-                    ①GPS情報をもとに、近場にいて、かつTinderをダウンロードしているユーザを表示する。<br>
-                    ②表示されたユーザに対して、好みかどうか、Yes/Noの二択の質問に答える。<br>
-                    ③Yes同士になったユーザはお互いにメッセージを交換できる。<br>
-                    かなり世界的にヒットしているアプリですが、本質的な機能自体はこれくらいしかありません。</p>
+                    <p>さて、今回はまずは、手っ取り早い、簡単な方法から見ていきましょう。まず、自分のブログなりのページのソースコードを確認のためにみてください。</p>
                     
-                    <p>実際のところ、プログラミング上①と③は少しハードルの高い実装かもしれませんが、②は比較的容易にできます。</p>
-                    <p>そしてここがポイントです。つまり、Yes/Noで二択を選ばなければならない、もしくは選べるテーマはこのTinderスタイルのUIが非常にマッチする可能性があるということです。そこで私がまず思いついたのが、英単語の学習アプリでした。どういうことかというと、覚えなければならない英単語について、私たちは「（すでに）知っている」or 「（まだ）知らない」の二択を選ぶことができます。「（すでに）知っている」単語は学習する必要がないためスワイプして二度と画面上に出て来ないように消します。Tinderでいうところの「嫌い」に相当するわけですね。一方、「（まだ）知らない」単語は何度も学習する必要があるため、何度も出てくるように履歴に残します。Tinderでいうところの「好き」に相当します。このように、所詮英単語アプリなのですが、少し工夫を凝らすだけでかなり使い勝手のいいアプリが簡単にできてしまいます。（まだ完成していないので、完成次第また発表させていただきますね。）</p>
+                    <p>私は普段ChromeをWebブラウザとして利用しているのですが、画面を右クリックすると「ページのソースを表示」という選択肢が出てくると思います。そしてそのボタンをクリックすると・・・</p>
 
-                    <p>あくまで一例をご説明しましたが、数あるアイディア発想法の中においては決まった方法論なのでわりと取り組みやすいのでは、と思います。是非試してみてください。</p>
-                    
+                    <img class="img-responsive" src="../img/20161111_toppage_1.png" alt="">
+
+                    <p>はい、ページのソースコードであるHTMLが表示されました。</p>
+
+                    <img class="img-responsive" src="../img/20161111_toppage_2.png" alt="">
+
+                    <p>この9行目と10行目、12行目をよく見ると、それぞれ、’description（要約という意味）’、’author（著者という意味）’、’title（タイトル）’となっていることがわかります。私自身今回チェックして初めて気がついたのですが、’description’と’author’が空欄になっていることに気づきました。これは私が現在使っているシステムの初期設定がこのようになってしまっていたのでそのまま更新されることがなかったからなんですね。</p>
+
+                    <p>HTMLに詳しくない人のために少し補足しておくと、'description’、’author’、’title’のどれもが、4行目の’head’の中に書かれていることに気づくかと思います。’head’は読んで字のごとく「頭」なので、クローラーが何かしらページを読み込む際に真っ先にここに書かれている情報を読み込む可能性は大いにあります。したがって、ここを空欄のまま放置しておくのは勿体無いと言えるでしょう。</p>
+                    <p>ということで、今回私はこのようにアップデートしてみました。</p>
+
+                    <img class="img-responsive" src="../img/firebase.png" alt="">
+
+                    <p>アップデート方法は情報として汎用性が無いのでここで詳しくは書きませんが、一度自分のサイトなり、気になるサイトがどのように<head>内を記載しているか確認されてみるのもいいかもしれません。</p>
                 </div>
             </div>
         </div>
