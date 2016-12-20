@@ -22,7 +22,7 @@
 }
 
 .va-middle {
-	color: #fff;
+	color: #fff !important;
 	vertical-align: middle;
 	display: table-cell;
 }
